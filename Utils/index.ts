@@ -1,3 +1,4 @@
+import { CarCardProps } from "@/types";
 import axios from "axios";
 
 const fetchData = async () => {
@@ -32,7 +33,7 @@ export const calculateCarRent = (city_mpg: number, year: number) => {
 };
 
 
-export const generateCarImageUrl = (car: CarProps, angle?: string) => {
+export const generateCarImageUrl = (car: CarCardProps, angle?: string) => {
   const url = new URL("https://cdn.imagin.studio/getimage");
   const { make, model, year } = car;
 

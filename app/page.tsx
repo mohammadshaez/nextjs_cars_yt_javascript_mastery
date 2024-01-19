@@ -19,8 +19,8 @@ export default async function Home() {
         <div className="home__filters">
           <Searchbar />
           <div className="home__filter-container">
-            <CustomFilter title="fuel" />
-            <CustomFilter title="year" />
+            {/* <CustomFilter title="fuel" />
+            <CustomFilter title="year" /> */}
 
             {isDataEmpty ? (
               <section className="home__error-container">
